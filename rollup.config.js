@@ -1,6 +1,5 @@
 import typescript from "@rollup/plugin-typescript";
 import filesize from "rollup-plugin-filesize";
-import nodeExternals from "rollup-plugin-node-externals";
 
 export default {
   input: "src/index.ts",
@@ -16,6 +15,5 @@ export default {
       noEmitOnError: true,
     }),
     filesize(),
-    nodeExternals(),
   ],
 };
