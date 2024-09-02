@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Pourquoi la programmation fonctionnelle préfère-t-elle l'utilisation de fonctions comme map ou reduce à la place de boucles for ?",
+      "options": ["A) Parce qu'elles sont plus performantes", "B) Parce qu'elles favorisent l'immutabilité", "C) Parce qu'elles sont plus faciles à écrire", "D) Parce qu'elles rendent le code plus lisible"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Que fait la fonction suivante en TypeScript ? const doubleAndFilter = (arr: number[]): number[] => { return arr.map(x => x * 2).filter(x => x > 10); }; const result = doubleAndFilter([1, 5, 10, 15]); console.log(result);",
+      "options": ["A) [2, 10, 20, 30]", "B) [20, 30]", "C) [30]", "D) [10, 20, 30]"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Que permet la composition de fonctions en programmation fonctionnelle ?",
+      "options": ["A) Enchaîner plusieurs fonctions en une seule", "B) Optimiser les performances du code", "C) Simplifier les tests unitaires", "D) Remplacer les boucles par des expressions fonctionnelles"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Que fait la fonction reduce en programmation fonctionnelle ?",
+      "options": ["A) Applique une fonction à chaque élément d'une liste pour produire une seule valeur", "B) Filtre les éléments d'une liste", "C) Modifie les éléments d'une liste", "D) Ajoute de nouveaux éléments à une liste"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel code TypeScript montre une utilisation de closure ? const x = () => { let count = 0; return () => count++; }; const y = (a: number, b: number): number => a + b;",
+      "options": ["A) const x = () => { let count = 0; return () => count++; };", "B) const y = (a: number, b: number): number => a + b;", "C) Aucune n'utilise de closure", "D) Les deux utilisent des closures"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quelle fonction en programmation fonctionnelle permet de combiner plusieurs fonctions en une seule ?",
+      "options": ["A) compose", "B) reduce", "C) filter", "D) map"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est un avantage clé des fonctions d'ordre supérieur ?",
+      "options": ["A) Elles permettent de muter l'état global", "B) Elles permettent la réutilisation du code", "C) Elles réduisent la lisibilité du code", "D) Elles augmentent la complexité du code"],
+      "correct": "B"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est un exemple d'une fonction pure ?",
+      "options": ["A) Une fonction qui génère un nombre aléatoire", "B) Une fonction qui additionne deux nombres", "C) Une fonction qui modifie une variable globale", "D) Une fonction qui écrit un message dans la console"],
+      "correct": "B"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est un exemple d'une fonction impure ?",
+      "options": ["A) Une fonction qui retourne la longueur d'une liste", "B) Une fonction qui multiplie deux nombres", "C) Une fonction qui ajoute un élément à une liste globale", "D) Une fonction qui vérifie si un nombre est pair"],
+      "correct": "C"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est l'intérêt de la composition de fonctions en programmation fonctionnelle ?",
+      "options": ["A) Accélérer l'exécution du code", "B) Simplifier la gestion des états mutables", "C) Faciliter la création de pipelines de transformation", "D) Remplacer les boucles for par des expressions déclaratives"],
+      "correct": "C"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quelle fonction JavaScript ou TypeScript peut être utilisée pour composer des fonctions ?",
+      "options": ["A) pipe", "B) map", "C) filter", "D) forEach"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est l'avantage d'une fonction curried ?",
+      "options": ["A) Permet la mutation d'état", "B) Facilite la création de fonctions spécialisées", "C) Augmente la complexité du code", "D) Limite la réutilisabilité des fonctions"],
+      "correct": "B"
+  }
+]

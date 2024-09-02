@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quel est un avantage clé de ReScript par rapport à JavaScript pur ?",
+      "options": ["A) ReScript permet d'écrire du code impératif plus rapidement", "B) ReScript offre une compilation en JavaScript plus performante", "C) ReScript remplace JavaScript sans compromis", "D) ReScript ne supporte pas les types stricts"],
+      "correct": "B"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quel est le rôle d'une bibliothèque fonctionnelle comme ts-belt en TypeScript ?",
+      "options": ["A) Faciliter la manipulation des structures immuables", "B) Remplacer TypeScript par JavaScript", "C) Améliorer la gestion des exceptions", "D) Accélérer l'exécution des boucles for"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Pourquoi ReScript est-il particulièrement adapté pour être utilisé dans des projets existants en TypeScript ?",
+      "options": ["A) ReScript est conçu pour être utilisé uniquement dans de nouveaux projets", "B) ReScript maintient une stricte compatibilité de type", "C) ReScript ne prend pas en charge TypeScript", "D) ReScript remplace TypeScript dans les projets existants"],
+      "correct": "B"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Comment ReScript garantit-il la sécurité des types ?",
+      "options": ["A) En utilisant un typage statique strict", "B) En permettant la mutation des types à l'exécution", "C) En ignorant les erreurs de type", "D) En lançant des exceptions pour les erreurs de type"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Comment ReScript permet-il la composition de fonctions ?",
+      "options": ["A) En utilisant des pipelines avec |>", "B) En utilisant des boucles for", "C) En modifiant directement les arguments", "D) En utilisant des variables globales"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle est la différence principale entre ReScript et JavaScript ?",
+      "options": ["A) ReScript utilise un typage statique strict, tandis que JavaScript utilise un typage dynamique", "B) JavaScript est plus performant que ReScript", "C) ReScript permet plus d'effets de bord que JavaScript", "D) JavaScript supporte nativement les monades, tandis que ReScript non"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle est l'importance de Belt en ReScript ?",
+      "options": ["A) Fournir une bibliothèque fonctionnelle standard", "B) Remplacer les méthodes natives de JavaScript", "C) Accélérer l'exécution des boucles", "D) Améliorer la gestion des erreurs"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quel est un avantage clé de ReScript par rapport à JavaScript ?",
+      "options": ["A) Une meilleure interopérabilité avec OCaml", "B) Une compilation plus rapide en JavaScript", "C) Un typage plus strict que JavaScript", "D) Un support natif pour les monades"],
+      "correct": "C"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Comment pipe est-il utilisé en ReScript ?",
+      "options": ["A) Enchaîner plusieurs fonctions de manière séquentielle", "B) Exécuter plusieurs fonctions en parallèle", "C) Remplacer les boucles for", "D) Modifier les valeurs d'une liste directement"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle est la fonction de Array.reduce en ReScript ?",
+      "options": ["A) Combiner les éléments d'une liste en une seule valeur", "B) Ajouter des éléments à une liste", "C) Filtrer les éléments d'une liste", "D) Parcourir une liste sans retour"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Comment ReScript assure-t-il la compatibilité avec des projets JavaScript existants ?",
+      "options": ["A) En compilant du code ReScript en JavaScript", "B) En forçant la réécriture du code en ReScript", "C) En utilisant Babel pour convertir le code", "D) En ignorant les types dynamiques"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Pourquoi ReScript est-il particulièrement adapté pour des projets de grande envergure ?",
+      "options": ["A) Il assure la sécurité des types à grande échelle", "B) Il permet une mutation rapide des données", "C) Il supporte les boucles for", "D) Il favorise l'utilisation de variables globales"],
+      "correct": "A"
+  }
+]

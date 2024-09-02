@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quel est un exemple d'opérateur RxJS qui transforme les éléments d'un flux ?",
+      "options": ["A) map", "B) forEach", "C) reduce", "D) filter"],
+      "correct": ["A", "D"]
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quelle est la principale différence entre un observable et une promesse en JavaScript ?",
+      "options": ["A) Un observable est un flux de données multiples, alors qu'une promesse ne représente qu'une seule valeur future", "B) Un observable ne peut gérer qu'une seule valeur", "C) Une promesse est plus puissante qu'un observable", "D) Un observable ne peut pas être annulé"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quel est un exemple de flux de données que RxJS pourrait gérer efficacement ?",
+      "options": ["A) Lecture d'un fichier", "B) Compteur de clics sur une page web", "C) Calcul de la factorielle d'un nombre", "D) Génération de nombres aléatoires"],
+      "correct": "B"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Comment créer un observable en RxJS ?",
+      "options": ["A) En utilisant la fonction fromEvent", "B) En utilisant la fonction fetch", "C) En utilisant une boucle for", "D) En utilisant une promesse"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quelle méthode RxJS permet de s'abonner à un observable ?",
+      "options": ["A) subscribe", "B) then", "C) map", "D) forEach"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quelle est une bonne pratique en programmation réactive avec RxJS ?",
+      "options": ["A) Éviter les observables et utiliser uniquement des promesses", "B) Utiliser des observables pour gérer les flux de données asynchrones de manière déclarative", "C) Utiliser des boucles for pour gérer les flux de données asynchrones", "D) Ignorer les erreurs dans les observables"],
+      "correct": "B"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quelle est la différence entre un flux chaud et un flux froid en programmation réactive ?",
+      "options": ["A) Un flux chaud est partagé entre plusieurs observateurs, tandis qu'un flux froid produit des valeurs pour chaque observateur", "B) Un flux chaud est plus rapide qu'un flux froid", "C) Un flux froid est partagé entre plusieurs observateurs, tandis qu'un flux chaud produit des valeurs pour chaque observateur", "D) Un flux chaud ne peut pas être annulé"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Comment gérer l'annulation d'une opération asynchrone en programmation réactive ?",
+      "options": ["A) En utilisant un unsubscribe sur l'observable", "B) En utilisant un then sur la promesse", "C) En utilisant une boucle for", "D) En lançant une exception"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quelle est la différence entre switchMap et mergeMap en RxJS ?",
+      "options": ["A) switchMap annule les flux précédents, tandis que mergeMap les combine", "B) mergeMap annule les flux précédents, tandis que switchMap les combine", "C) switchMap est plus rapide que mergeMap", "D) mergeMap est plus rapide que switchMap"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Comment utiliser fromEvent pour créer un observable à partir d'un événement du DOM ?",
+      "options": ["A) fromEvent(document, 'click')", "B) fromEvent('click', document)", "C) fromEvent('document', 'click')", "D) fromEvent('click', 'document')"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quel est un exemple d'utilisation de debounceTime en RxJS ?",
+      "options": ["A) Limiter le nombre d'événements traités dans un certain intervalle de temps", "B) Combiner plusieurs observables en un seul", "C) Filtrer les valeurs d'un flux", "D) Annuler les flux précédents"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quel opérateur RxJS pourrait être utilisé pour transformer un flux en un autre flux avec une logique conditionnelle ?",
+      "options": ["A) map", "B) filter", "C) reduce", "D) scan"],
+      "correct": "A"
+  }
+]

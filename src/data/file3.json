@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Quel est l'objectif de l'utilisation de la fonction filter en programmation fonctionnelle ?",
+      "options": ["A) Sélectionner les éléments d'une liste qui satisfont à une condition donnée", "B) Accumuler une valeur unique à partir d'une liste", "C) Transformer les éléments d'une liste", "D) Remplacer les boucles for"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Pourquoi la programmation fonctionnelle favorise-t-elle l'immutabilité des données ?",
+      "options": ["A) Pour réduire les effets de bord et rendre le code plus prévisible", "B) Pour permettre la modification des données à tout moment", "C) Pour éviter l'utilisation de boucles", "D) Pour rendre le code plus difficile à comprendre"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Reconnaître la différence entre du code fonctionnel et impératif : const f = (arr: number[]): number => arr.reduce((acc, curr) => acc + curr, 0); let sum = 0; const g = (arr: number[]): number => { for (let i = 0; i < arr.length; i++) { sum += arr[i]; } return sum; };",
+      "options": ["A) const f = (arr: number[]): number => arr.reduce((acc, curr) => acc + curr, 0);", "B) Les deux sont fonctionnels", "C) Aucun n'est fonctionnel", "D) const g = (arr: number[]): number => { for (let i = 0; i < arr.length; i++) { sum += arr[i]; } return sum; };"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Quelle fonction en programmation fonctionnelle applique une fonction à chaque élément d'une liste et retourne une nouvelle liste ?",
+      "options": ["A) filter", "B) map", "C) reduce", "D) forEach"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Quelle est la différence entre une fonction pure et une fonction impure ?",
+      "options": ["A) Une fonction pure ne dépend que de ses arguments", "B) Une fonction impure ne retourne aucune valeur", "C) Une fonction pure est toujours plus rapide", "D) Une fonction impure modifie l'état global"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Exemple de style point-free en TypeScript : const double = (x: number): number => x * 2; const a = (arr: number[]): number[] => arr.map(x => double(x)); const b = (arr: number[]): number[] => arr.map(double);",
+      "options": ["A) const a = (arr: number[]): number[] => arr.map(x => double(x));", "B) const b = (arr: number[]): number[] => arr.map(double);", "C) Aucun n'est point-free", "D) Les deux sont point-free"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Que retourne la fonction suivante en TypeScript ? const arr = [1, 2, 3, 4]; const result = arr.map(x => x * 2).filter(x => x > 4); console.log(result);",
+      "options": ["A) [2, 4, 6, 8]", "B) [6, 8]", "C) [4, 6, 8]", "D) [1, 2, 3, 4]"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Qu'est-ce qu'une fonction pure en programmation fonctionnelle ?",
+      "options": ["A) Une fonction qui ne dépend que de ses arguments", "B) Une fonction qui modifie une variable globale", "C) Une fonction qui retourne toujours le même résultat pour les mêmes entrées", "D) Une fonction qui génère un nombre aléatoire"],
+      "correct": ["A", "C"]
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Quel est l'avantage d'utiliser la récursivité en programmation fonctionnelle ?",
+      "options": ["A) Elle permet de conserver l'immutabilité", "B) Elle remplace les boucles for", "C) Elle accélère l'exécution du code", "D) Elle rend le code plus lisible"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Quel est le rôle de filter en programmation fonctionnelle ?",
+      "options": ["A) Filtrer les éléments d'une liste selon une condition", "B) Transformer chaque élément d'une liste", "C) Combiner les éléments d'une liste en une seule valeur", "D) Ajouter des éléments à une liste"],
+      "correct": "A"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Que retourne le code suivant ? const numbers = [10, 20, 30, 40]; const result = numbers.reduce((acc, curr) => acc + curr, 0); console.log(result);",
+      "options": ["A) 10", "B) 100", "C) 0", "D) 40"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Que retourne la fonction suivante ? const nums = [1, 2, 3, 4, 5]; const result = nums.map(x => x + 1).reduce((acc, curr) => acc * curr, 1); console.log(result);",
+      "options": ["A) 360", "B) 720", "C) 120", "D) 48"],
+      "correct": "B"
+  }
+]

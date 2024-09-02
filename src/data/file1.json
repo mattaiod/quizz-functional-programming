@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Laquelle des propositions suivantes n'est PAS une caractéristique de la programmation fonctionnelle ?",
+      "options": ["A) Immutabilité", "B) Functions as first-class citizens", "C) Fonctions d'ordre supérieur", "D) État mutable"],
+      "correct": "D"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quel concept permet à une fonction de se souvenir de l'environnement dans lequel elle a été créée ?",
+      "options": ["A) Closure", "B) Récursivité", "C) Instructions conditionnelles", "D) Boucles"],
+      "correct": "A"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quels sont les langages considérés comme purement fonctionnels ?",
+      "options": ["A) Python, Java", "B) JavaScript, TypeScript", "C) Haskell, Idris", "D) C++, C#"],
+      "correct": "C"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Pourquoi la Programmation Fonctionnelle n'est-elle pas la norme ?",
+      "options": ["A) La courbe d'apprentissage est élevée", "B) Les langages fonctionnels sont rares", "C) Les concepts sont trop simples", "D) Les langages fonctionnels sont lents"],
+      "correct": "A"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quels langages parmi les suivants sont connus pour leur approche fonctionnelle, mais ne sont pas purement fonctionnels ?",
+      "options": ["A) Haskell, Idris", "B) Python, Java", "C) Scala, F#", "D) JavaScript, TypeScript"],
+      "correct": "C"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quelle est l'origine théorique de la programmation fonctionnelle ?",
+      "options": ["A) Calcul de Turing", "B) Calcul lambda", "C) Théorie des ensembles", "D) Algorithmes de tri"],
+      "correct": "B"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "En programmation fonctionnelle, pourquoi favorise-t-on l'immutabilité des données ?",
+      "options": ["A) Pour permettre la modification des données à tout moment", "B) Pour réduire les effets de bord et rendre le code plus prévisible", "C) Pour rendre le code plus difficile à comprendre", "D) Pour accélérer l'exécution du code"],
+      "correct": "B"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quelle est la principale différence entre la programmation impérative et déclarative ?",
+      "options": ["A) La programmation impérative se concentre sur le 'quoi'", "B) La programmation déclarative se concentre sur le 'comment'", "C) La programmation impérative spécifie chaque étape du processus", "D) La programmation déclarative nécessite des boucles explicites"],
+      "correct": "C"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quel est un exemple de langage impératif ?",
+      "options": ["A) Haskell", "B) JavaScript", "C) Scala", "D) Elm"],
+      "correct": "B"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quel est l'objectif principal de la programmation fonctionnelle ?",
+      "options": ["A) Maximiser l'efficacité de l'utilisation de la mémoire", "B) Minimiser les erreurs à l'exécution", "C) Écrire du code impératif plus rapidement", "D) Remplacer tous les paradigmes de programmation"],
+      "correct": "B"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quel langage est considéré comme l'un des premiers à avoir implémenté des concepts fonctionnels ?",
+      "options": ["A) C", "B) Lisp", "C) Python", "D) Java"],
+      "correct": "B"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quel avantage principal apporte la programmation fonctionnelle en termes de gestion des erreurs ?",
+      "options": ["A) Elle rend le code plus rapide", "B) Elle permet de gérer les erreurs de manière plus prévisible et explicite", "C) Elle élimine complètement les erreurs", "D) Elle permet d'ignorer les erreurs"],
+      "correct": "B"
+  }
+]

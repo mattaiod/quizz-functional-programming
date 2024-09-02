@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quels concepts sont au cœur de la programmation fonctionnelle ?",
+      "options": ["A) État mutable et boucles", "B) Fonctions pures et immutabilité", "C) Classes et héritage", "D) Variables globales et exceptions"],
+      "correct": "B"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quel langage de programmation utilise exclusivement des fonctions pures et des monades pour gérer les effets de bord ?",
+      "options": ["A) Haskell", "B) JavaScript", "C) Python", "D) Java"],
+      "correct": "A"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quelle est la différence entre une fonction d'ordre supérieur et une fonction de premier ordre ?",
+      "options": ["A) Une fonction d'ordre supérieur accepte d'autres fonctions comme arguments ou retourne une fonction", "B) Une fonction de premier ordre accepte d'autres fonctions comme arguments", "C) Une fonction de premier ordre ne peut pas accepter d'autres fonctions", "D) Une fonction d'ordre supérieur ne peut pas retourner une fonction"],
+      "correct": "A"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Pourquoi la programmation fonctionnelle est-elle moins sujette aux bugs que la programmation impérative ?",
+      "options": ["A) Elle évite l'utilisation d'états mutables", "B) Elle est plus facile à apprendre", "C) Elle est basée sur des concepts mathématiques rigoureux", "D) Elle utilise des boucles for et while"],
+      "correct": "A"
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quels sont les bénéfices principaux de l'immuabilité en programmation fonctionnelle ?",
+      "options": ["A) Moins de bugs causés par des états imprévus", "B) Meilleure prédictibilité du code", "C) Optimisation automatique des boucles", "D) Permet la mutation d'états locaux"],
+      "correct": ["A", "B"]
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quelle est la différence principale entre un langage fonctionnel pur et un langage fonctionnel mixte ?",
+      "options": ["A) Un langage fonctionnel pur ne permet pas d'effets de bord", "B) Un langage fonctionnel mixte permet l'utilisation de paradigmes impératifs", "C) Un langage fonctionnel pur ne peut pas utiliser de variables globales", "D) Un langage fonctionnel mixte utilise des états mutables par défaut"],
+      "correct": ["A", "B"]
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quels langages parmi les suivants peuvent être utilisés pour la programmation fonctionnelle ?",
+      "options": ["A) Haskell", "B) JavaScript", "C) Python", "D) C#"],
+      "correct": ["A", "B", "C", "D"]
+  },
+  {
+      "theme": "Introduction à la Programmation Fonctionnelle",
+      "question": "Quels sont les avantages d'utiliser des fonctions comme map, filter, et reduce par rapport aux boucles for ?",
+      "options": ["A) Elles favorisent l'immutabilité", "B) Elles rendent le code plus concis", "C) Elles sont toujours plus rapides que les boucles", "D) Elles permettent une composition facile des fonctions"],
+      "correct": ["A", "B", "D"]
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "À quoi sert généralement RxJS en programmation réactive ?",
+      "options": ["A) Manipuler le DOM", "B) Gérer les flux de données asynchrones", "C) Générer des nombres aléatoires", "D) Réduire la taille du code"],
+      "correct": "B"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Assembler des fonctions avec pipe pour obtenir un résultat : Vous disposez des fonctions suivantes en TypeScript : const double = (x: number): number => x * 2; const increment = (x: number): number => x + 1; const filterEven = (arr: number[]): number[] => arr.filter(x => x % 2 === 0); const sum = (arr: number[]): number => arr.reduce((acc, curr) => acc + curr, 0); À partir d'un tableau d'entiers [1, 2, 3, 4, 5], vous devez obtenir la somme des éléments pairs après les avoir doublés. Quelle séquence de fonctions devez-vous utiliser avec pipe pour atteindre ce résultat ?",
+      "options": ["A) pipe([1, 2, 3, 4, 5], double, filterEven, sum)", "B) pipe([1, 2, 3, 4, 5], map(double), filterEven, sum)", "C) pipe([1, 2, 3, 4, 5], filterEven, double, sum)", "D) pipe([1, 2, 3, 4, 5], filterEven, map(double), sum)"],
+      "correct": "D"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Quel est le rôle du polymorphisme paramétrique en programmation fonctionnelle ?",
+      "options": ["A) Simplifier l'écriture de fonctions spécifiques à chaque type", "B) Restreindre une fonction à un type de données spécifique", "C) Optimiser la performance de l'exécution du code", "D) Permettre à une fonction ou à un type de fonctionner avec n'importe quel type de données"],
+      "correct": "D"
+  },
+  {
+      "theme": "Concepts Fondamentaux",
+      "question": "Reconnaître une closure : const x = () => { let count = 0; return () => count++; }; const y = (a: number, b: number): number => a + b; Quelle proposition montre une utilisation de closure ?",
+      "options": ["A) const x = () => { let count = 0; return () => count++; };", "B) const y = (a: number, b: number): number => a + b;", "C) Aucune n'utilise de closure", "D) Les deux utilisent des closures"],
+      "correct": "A"
+  }
+]

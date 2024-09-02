@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est un exemple d'application partielle en TypeScript ?",
+      "options": ["A) const add = (a, b) => a + b;", "B) const add = (a) => (b) => a + b;", "C) const add = (a) => (b) => a - b;", "D) const add = (a, b) => a * b;"],
+      "correct": "B"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est l'intérêt de l'immutabilité dans les fonctions pures ?",
+      "options": ["A) Réduire la vitesse d'exécution", "B) Permettre la modification des données", "C) Augmenter la prédictibilité du code", "D) Accroître les effets de bord"],
+      "correct": "C"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est le résultat du code suivant en TypeScript ? const numbers = [1, 2, 3, 4]; const increment = x => x + 1; const result = numbers.map(increment).reduce((acc, curr) => acc + curr, 0); console.log(result);",
+      "options": ["A) 10", "B) 15", "C) 14", "D) 16"],
+      "correct": "B"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Que retourne la fonction suivante en TypeScript ? const nums = [1, 2, 3, 4, 5]; const result = nums.filter(x => x % 2 === 0).map(x => x * 3); console.log(result);",
+      "options": ["A) [6, 12]", "B) [2, 4]", "C) [3, 6, 9]", "D) [12, 15]"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Comment la curryfication aide-t-elle à la création de fonctions réutilisables ?",
+      "options": ["A) Elle permet de fixer certains arguments pour créer des fonctions spécialisées", "B) Elle remplace les boucles for", "C) Elle facilite l'écriture de fonctions complexes", "D) Elle permet de modifier directement les arguments"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quelle est la différence entre map et filter en programmation fonctionnelle ?",
+      "options": ["A) map transforme les éléments d'une liste, filter sélectionne les éléments selon une condition", "B) filter transforme les éléments d'une liste, map les sélectionne selon une condition", "C) map est plus rapide que filter", "D) filter est plus rapide que map"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Que fait la fonction suivante en TypeScript ? const words = ['apple', 'banana', 'cherry']; const capitalized = words.map(word => word.toUpperCase()); console.log(capitalized);",
+      "options": ["A) ['APPLE', 'BANANA', 'CHERRY']", "B) ['apple', 'banana', 'cherry']", "C) ['Apple', 'Banana', 'Cherry']", "D) ['APPLE']"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est l'objectif principal de l'utilisation de la fonction reduce ?",
+      "options": ["A) Transformer une liste en une seule valeur", "B) Ajouter des éléments à une liste", "C) Filtrer les éléments d'une liste", "D) Appliquer une fonction à chaque élément d'une liste"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Que permet la composition de fonctions en TypeScript ?",
+      "options": ["A) Combiner plusieurs fonctions pour créer une nouvelle fonction", "B) Remplacer les boucles for", "C) Modifier directement les arguments des fonctions", "D) Améliorer les performances d'exécution"],
+      "correct": "A"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quelle est la différence entre une fonction pure et une fonction impure ?",
+      "options": ["A) Une fonction pure retourne toujours le même résultat pour les mêmes entrées", "B) Une fonction impure modifie l'état global ou dépend de celui-ci", "C) Une fonction pure ne retourne aucune valeur", "D) Une fonction impure ne peut pas être testée"],
+      "correct": ["A", "B"]
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Quel est le résultat du code suivant en TypeScript ? const numbers = [1, 2, 3]; const doubled = numbers.map(x => x * 2); const sum = doubled.reduce((acc, curr) => acc + curr, 0); console.log(sum);",
+      "options": ["A) 6", "B) 12", "C) 18", "D) 24"],
+      "correct": "B"
+  },
+  {
+      "theme": "Fonctions d’Ordre Supérieur et Fonctions Pures",
+      "question": "Que permet d'éviter l'utilisation de fonctions pures en programmation fonctionnelle ?",
+      "options": ["A) Les effets de bord", "B) La mutation d'état", "C) Les erreurs imprévisibles", "D) L'utilisation de variables globales"],
+      "correct": ["A", "B", "C"]
+  }
+]

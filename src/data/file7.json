@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel est l'avantage principal des types immuables ?",
+      "options": ["A) Ils ne peuvent pas être modifiés après leur création", "B) Ils permettent une modification rapide des données", "C) Ils sont toujours plus rapides", "D) Ils rendent le code moins prévisible"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Que permet l'utilisation de types génériques en TypeScript ?",
+      "options": ["A) Créer des fonctions qui fonctionnent avec n'importe quel type de données", "B) Forcer l'utilisation d'un type spécifique", "C) Rendre le code plus difficile à lire", "D) Optimiser les performances d'exécution"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Que garantit l'utilisation d'un typage fort dans un langage fonctionnel ?",
+      "options": ["A) Que les opérations illégales sur les types sont détectées à la compilation", "B) Que le code sera toujours plus rapide", "C) Que les variables globales sont protégées", "D) Que les boucles sont optimisées"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Comment ReScript gère-t-il les types optionnels ?",
+      "options": ["A) Avec des valeurs de type Option", "B) Avec null et undefined", "C) En lançant une exception si la valeur est manquante", "D) En utilisant des variables globales"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel est l'intérêt principal de l'immutabilité en programmation fonctionnelle ?",
+      "options": ["A) Éviter les effets de bord et rendre le code plus prévisible", "B) Permettre la mutation rapide des données", "C) Accélérer l'exécution des boucles", "D) Faciliter l'utilisation de variables globales"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Que permet de faire le polymorphisme paramétrique en TypeScript ?",
+      "options": ["A) Créer des fonctions qui peuvent fonctionner avec n'importe quel type", "B) Restreindre une fonction à un type spécifique", "C) Modifier directement les arguments des fonctions", "D) Optimiser les performances d'exécution"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Que fait la fonction Array.map en TypeScript ?",
+      "options": ["A) Applique une fonction à chaque élément d'un tableau et retourne un nouveau tableau", "B) Applique une fonction à chaque élément d'un tableau et retourne une valeur unique", "C) Filtre les éléments d'un tableau", "D) Modifie directement les éléments d'un tableau"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel est un exemple de type somme en TypeScript ?",
+      "options": ["A) type Result = Success | Failure;", "B) type NumberOrString = number | string;", "C) type Direction = 'up' | 'down';", "D) type BooleanString = boolean | string;"],
+      "correct": ["A", "B", "C"]
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "À quoi sert généralement RxJS en programmation réactive ?",
+      "options": ["A) Manipuler le DOM", "B) Gérer les flux de données asynchrones", "C) Générer des nombres aléatoires", "D) Réduire la taille du code"],
+      "correct": "B"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quel est un avantage clé de la programmation réactive avec RxJS ?",
+      "options": ["A) Simplifier la gestion de la complexité asynchrone", "B) Augmenter la difficulté de débogage", "C) Réduire la modularité du code", "D) Améliorer la gestion de l'état global"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Qu'est-ce qu'un observable en RxJS ?",
+      "options": ["A) Un flux de données asynchrone", "B) Une fonction pure", "C) Une boucle impérative", "D) Une variable mutable"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Comment RxJS facilite-t-il la composition de flux asynchrones ?",
+      "options": ["A) En utilisant des boucles for", "B) En utilisant des opérateurs tels que map, filter, reduce", "C) En modifiant directement les éléments de la liste", "D) En utilisant des variables globales"],
+      "correct": "B"
+  }
+]

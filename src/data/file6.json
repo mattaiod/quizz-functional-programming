@@ -1,0 +1,74 @@
+[
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel concept en programmation fonctionnelle permet de représenter une valeur qui peut ou non être présente ?",
+      "options": ["A) Monade", "B) Closure", "C) Callback", "D) Option"],
+      "correct": "D"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel type de typage est souvent associé à la programmation fonctionnelle ?",
+      "options": ["A) Typage dynamique", "B) Typage faible", "C) Typage statique", "D) Typage fort"],
+      "correct": "C"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Comment peut-on garantir que les opérations sur des listes sont immuables en programmation fonctionnelle ?",
+      "options": ["A) En utilisant des boucles for", "B) En utilisant des fonctions comme map, filter, et reduce", "C) En modifiant directement les éléments de la liste", "D) En utilisant des variables globales"],
+      "correct": "B"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quelle est la principale différence entre le typage statique et le typage dynamique ?",
+      "options": ["A) Le typage statique vérifie les types à l'exécution", "B) Le typage dynamique vérifie les types à la compilation", "C) Le typage statique vérifie les types à la compilation", "D) Le typage dynamique ne vérifie jamais les types"],
+      "correct": "C"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Pourquoi le typage statique est-il favorisé en programmation fonctionnelle ?",
+      "options": ["A) Pour permettre la modification des types à l'exécution", "B) Pour détecter les erreurs de type à la compilation", "C) Pour écrire du code plus rapidement", "D) Pour rendre le code plus flexible"],
+      "correct": "B"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Qu'est-ce qu'une fonction curried ?",
+      "options": ["A) Une fonction qui accepte tous ses arguments en une seule fois", "B) Une fonction qui retourne une fonction pour chaque argument", "C) Une fonction qui modifie une variable globale", "D) Une fonction qui n'accepte aucun argument"],
+      "correct": "B"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Qu'est-ce que le polymorphisme paramétrique ?",
+      "options": ["A) La capacité de changer les types de variables à l'exécution", "B) La capacité d'écrire des fonctions génériques qui peuvent être appliquées à n'importe quel type de données", "C) La capacité de définir des types spécifiques pour chaque fonction", "D) La capacité de muter des variables globales"],
+      "correct": "B"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Comment gérer les erreurs en programmation fonctionnelle sans utiliser throw ?",
+      "options": ["A) En utilisant des structures de contrôle impératives", "B) En utilisant des monades comme Maybe ou Result", "C) En ignorant les erreurs", "D) En utilisant uniquement des fonctions pures"],
+      "correct": "B"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quelle fonction en TypeScript permet de s'assurer qu'une valeur existe avant de l'utiliser ?",
+      "options": ["A) map", "B) filter", "C) reduce", "D) Option.getWithDefault"],
+      "correct": "D"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel est un avantage de l'utilisation de types génériques en TypeScript ?",
+      "options": ["A) Permet de créer du code plus rapide", "B) Permet de créer du code plus flexible et réutilisable", "C) Permet de forcer l'utilisation d'un type spécifique", "D) Permet d'éviter les erreurs à l'exécution"],
+      "correct": "B"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Quel est le résultat de l'utilisation de map sur un tableau en JavaScript ?",
+      "options": ["A) Un nouveau tableau avec les éléments modifiés", "B) Le tableau original est modifié", "C) Une valeur unique est retournée", "D) Une erreur est lancée"],
+      "correct": "A"
+  },
+  {
+      "theme": "Typage et Immutabilité",
+      "question": "Pourquoi le typage statique est-il préféré dans certains langages fonctionnels ?",
+      "options": ["A) Pour éviter les erreurs de type à l'exécution", "B) Pour rendre le code plus flexible", "C) Pour permettre la mutation d'état", "D) Pour accélérer l'écriture du code"],
+      "correct": "A"
+  }
+]

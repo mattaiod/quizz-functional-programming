@@ -1,0 +1,68 @@
+[
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quel est un avantage clé de l'utilisation de merge en RxJS ?",
+      "options": ["A) Il combine plusieurs observables en un seul", "B) Il annule les flux précédents", "C) Il limite le nombre d'événements traités", "D) Il transforme un flux en une valeur unique"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Comment utiliser forkJoin en RxJS ?",
+      "options": ["A) Pour attendre la complétion de plusieurs observables et émettre une valeur finale", "B) Pour annuler plusieurs flux en même temps", "C) Pour limiter le nombre de flux en parallèle", "D) Pour transformer plusieurs flux en un seul"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Quelle est la différence entre concat et merge en RxJS ?",
+      "options": ["A) concat exécute les observables séquentiellement, merge les exécute en parallèle", "B) merge exécute les observables séquentiellement, concat les exécute en parallèle", "C) concat est plus rapide que merge", "D) merge est plus rapide que concat"],
+      "correct": "A"
+  },
+  {
+      "theme": "Programmation Réactive",
+      "question": "Comment utiliser retry en RxJS pour réessayer une opération asynchrone en cas d'échec ?",
+      "options": ["A) retry(3) pour réessayer l'opération jusqu'à trois fois", "B) retry(3) pour réessayer l'opération jusqu'à trois fois mais en annulant les flux précédents", "C) retry(3) pour réessayer l'opération uniquement si une exception est lancée", "D) retry(3) pour réessayer l'opération jusqu'à trois fois mais seulement si l'observable est froid"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Comment ReScript peut-il être utilisé dans un projet existant en JavaScript ou TypeScript ?",
+      "options": ["A) ReScript doit être utilisé exclusivement dans des projets nouveaux", "B) ReScript peut être ajouté à un projet existant en compilant le code ReScript en JavaScript", "C) ReScript remplace tout le code JavaScript/TypeScript existant", "D) ReScript ne supporte pas l'interopérabilité avec JavaScript ou TypeScript"],
+      "correct": "B"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Comment ReScript peut-il interagir avec du code TypeScript dans un projet mixte ?",
+      "options": ["A) ReScript ne supporte pas l'interaction avec TypeScript", "B) ReScript peut être bindé à du code TypeScript en utilisant des bindings externes", "C) ReScript doit être converti en TypeScript avant toute interaction", "D) ReScript et TypeScript sont incompatibles"],
+      "correct": "B"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quel est l'avantage principal d'utiliser ts-belt en TypeScript ?",
+      "options": ["A) Éviter l'utilisation des fonctions JavaScript natives qui peuvent être mutables", "B) Simplifier la manipulation du DOM", "C) Garantir une cohérence dans la manipulation des données", "D) Permettre l'utilisation de boucles for"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle fonction de ts-belt permet de fusionner deux listes en une seule, en appliquant une fonction à chaque paire d'éléments correspondants ?",
+      "options": ["A) Array.zipWith", "B) Array.concat", "C) Array.flatten", "D) Array.map"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle fonction de ts-belt permet de vérifier si tous les éléments d'une liste satisfont une condition donnée ?",
+      "options": ["A) Array.every", "B) Array.some", "C) Array.find", "D) Array.reduce"],
+      "correct": "A"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle fonction de ts-belt permet de vérifier si au moins un élément d'une liste satisfait une condition donnée ?",
+      "options": ["A) Array.every", "B) Array.some", "C) Array.find", "D) Array.map"],
+      "correct": "B"
+  },
+  {
+      "theme": "Rescript et Bibliothèques Fonctionnelles",
+      "question": "Quelle fonction de ts-belt permet de transformer une liste en une seule valeur en appliquant une fonction de combinaison ?",
+      "options": ["A) Array.reduce", "B) Array.fold", "C) Array.map", "D) Array.zip"],
+      "correct": "B"
+  }
+]
