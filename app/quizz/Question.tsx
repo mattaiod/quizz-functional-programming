@@ -11,10 +11,14 @@ export default function QuizzQuestion({ quizzItem }: { quizzItem: ItemQuizz }) {
     }
     setSelectedOptions([...selectedOptions, optionLetter]);
   };
+  const correctLength = quizzItem.correct.length;
   return (
     <div>
       <Heading as="h2" size="lg" className="mb-4">
         {quizzItem.question}
+      </Heading>
+      <Heading as="h2" size="sm" className="mb-4">
+        {`${correctLength} bonne${correctLength > 1 ? "s" : ""} réponse${correctLength > 1 ? "s" : ""}`}
       </Heading>
       <Stack direction={["column", "row"]} spacing={4}>
         {quizzItem.options.map((option, index) => {
