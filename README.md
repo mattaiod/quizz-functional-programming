@@ -1,4 +1,3 @@
-
 # Projet Quizz FP avec ts-belt
 
 ## Description
@@ -46,6 +45,14 @@ Dans un autre terminal, démarrez le serveur en mode développement avec :
 pnpm start:dev
 ```
 
+### Démarrage du serveur frontend
+
+Ouvrez encore un terminal et démarrez le serveur frontend avec :
+
+```bash
+pnpm next dev
+```
+
 ## Objectif du projet
 
 L'objectif de ce projet est de manipuler des fichiers JSON pour construire dynamiquement des endpoints API. Voici les étapes que vous devez suivre :
@@ -55,10 +62,10 @@ L'objectif de ce projet est de manipuler des fichiers JSON pour construire dynam
 
    ```json
    {
-       "theme": "Introduction à la Programmation Fonctionnelle",
-       "question": "Quel est un exemple de langage impératif ?",
-       "options": ["A) Haskell", "B) JavaScript", "C) Scala", "D) Elm"],
-       "correct": "B"
+     "theme": "Introduction à la Programmation Fonctionnelle",
+     "question": "Quel est un exemple de langage impératif ?",
+     "options": ["A) Haskell", "B) JavaScript", "C) Scala", "D) Elm"],
+     "correct": "B"
    }
    ```
 

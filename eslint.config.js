@@ -1,9 +1,9 @@
-import typescript from "@typescript-eslint/eslint-plugin";
-import functional from "eslint-plugin-functional";
-import parser from "@typescript-eslint/parser";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-import eslintPrettier from "eslint-plugin-prettier/recommended";
+import typescript from '@typescript-eslint/eslint-plugin';
+import functional from 'eslint-plugin-functional';
+import parser from '@typescript-eslint/parser';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import eslintPrettier from 'eslint-plugin-prettier/recommended';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -11,54 +11,72 @@ const __dirname = dirname(__filename);
 export default [
   eslintPrettier,
   {
-    files: ["src/**/*.ts"],
+    files: ['**/*{.js,.jsx,.ts,.tsx}'],
     languageOptions: {
       parser: parser,
-      sourceType: "module",
+      sourceType: 'module',
       parserOptions: {
-        project: "tsconfig.json",
+        project: 'tsconfig.json',
         tsconfigRootDir: __dirname,
+        ecmaFeatures: {
+          jsx: true,
+        },
+        ecmaVersion: 2020,
+        sourceType: 'module',
       },
     },
+    extends: [
+      'eslint:recommended',
+      'plugin:@next/next/recommended',
+      'plugin:prettier/recommended',
+    ],
     plugins: {
-      "@typescript-eslint": typescript,
+      '@typescript-eslint': typescript,
       functional: functional,
+      prettier: prettier,
     },
-    ignores: ["dist/*", "node_modules/*"],
+    ignores: ['dist/*', 'node_modules/*'],
     rules: {
-      "@typescript-eslint/no-namespace": "off",
-      "@typescript-eslint/interface-name-prefix": "off",
-      "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/explicit-module-boundary-types": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/quotes": 0,
-      "@typescript-eslint/no-unused-vars": "off",
-      "array-callback-return": "error",
-      "no-constructor-return": "error",
-      "no-duplicate-imports": "off",
-      "no-new-native-nonconstructor": "error",
-      "@typescript-eslint/no-use-before-define": "off",
-      "no-self-compare": "error",
-      "no-template-curly-in-string": "error",
-      "no-unused-private-class-members": "error",
-      "class-methods-use-this": "off",
-      "consistent-return": "off",
-      "no-unused-vars": "off",
-      "default-case": "error",
-      "dot-notation": "error",
-      eqeqeq: "error",
-      "init-declarations": "error",
-      "no-eq-null": "error",
-      "no-extend-native": "error",
-      "no-implicit-coercion": "error",
-      "no-new-object": "error",
-      "no-var": "error",
-      "prefer-object-spread": "error",
-      "require-await": "off",
-      yoda: "error",
-      "explicit-function-return-type": "off",
-      "sort-keys": "off",
-      "no-undef-init": "off",
+      'prettier/prettier': [
+        'error',
+        {
+          endOfLine: 'auto',
+        },
+      ],
+      'react/react-in-jsx-scope': 'off',
+      '@typescript-eslint/no-namespace': 'off',
+      '@typescript-eslint/interface-name-prefix': 'off',
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/quotes': 0,
+      '@typescript-eslint/no-unused-vars': 'off',
+      'array-callback-return': 'error',
+      'no-constructor-return': 'error',
+      'no-duplicate-imports': 'off',
+      'no-new-native-nonconstructor': 'error',
+      '@typescript-eslint/no-use-before-define': 'off',
+      'no-self-compare': 'error',
+      'no-template-curly-in-string': 'error',
+      'no-unused-private-class-members': 'error',
+      'class-methods-use-this': 'off',
+      'consistent-return': 'off',
+      'no-unused-vars': 'off',
+      'default-case': 'error',
+      'dot-notation': 'error',
+      eqeqeq: 'error',
+      'init-declarations': 'error',
+      'no-eq-null': 'error',
+      'no-extend-native': 'error',
+      'no-implicit-coercion': 'error',
+      'no-new-object': 'error',
+      'no-var': 'error',
+      'prefer-object-spread': 'error',
+      'require-await': 'off',
+      yoda: 'error',
+      'explicit-function-return-type': 'off',
+      'sort-keys': 'off',
+      'no-undef-init': 'off',
     },
   },
 ];
