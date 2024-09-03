@@ -109,6 +109,15 @@ const getAllLettersButCorrectLetter = (
   return A.filter(allLetters, (letter) => letter !== correctLetter);
 };
 
+const formatQuestion = (question: string): string => {
+  if (question.includes("const")) {
+    return question
+      .replace(/const/g, "<br>const") // Ajouter deux sauts de ligne avant chaque const
+      .replace(/;/g, ";<br><br>"); // Ajouter deux sauts de ligne après chaque point-virgule
+  }
+  return question;
+};
+
 const normalizeUrl = (str: string): string => {
   return str
     .normalize("NFD") // Normalize to decompose combined characters
@@ -270,7 +279,7 @@ export const makeRouteServer = (app: express.Application) => {
             itemQuizz,
             (index, item) => `
             <li>
-              <h2>${item.question}</h2>
+              <h2>${formatQuestion(item.question)}</h2>
               <ul>
                 ${item.options
                   .map(
