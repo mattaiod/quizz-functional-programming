@@ -4,10 +4,10 @@ import Title from "./components/Title";
 import Subtitle from "./components/Subtitle";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import MenuItems from "./components/MenuItems";
-import useGetAppRouter from "./useGetAppRouter";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
-  const router = useGetAppRouter();
+  const router = useRouter();
 
   return (
     <div className="w-2/3 m-auto">

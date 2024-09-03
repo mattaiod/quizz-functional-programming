@@ -1,8 +1,10 @@
+"use client";
+
 import { MenuItem } from "@chakra-ui/react";
-import useGetAppRouter from "../useGetAppRouter";
+import { useRouter } from "next/navigation";
 
 export default function MenuItems({ showHome }: { showHome?: boolean }) {
-  const router = useGetAppRouter();
+  const router = useRouter();
   const handleNavigation = (quizz: number) => {
     router.push("/quizz/" + quizz);
   };
