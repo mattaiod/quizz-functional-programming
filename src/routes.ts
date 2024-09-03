@@ -135,36 +135,78 @@ export const makeRouteServer = (app: express.Application) => {
     },
     A.forEach(([theme, itemQuizz]) => {
       const questionsHtml = `
-      <html>
-        <head>
-          <title>Quizz ${theme}</title>
-        </head>
-        <body>
-          <h1>Quizz ${theme}</h1>
-          <ul>
-            ${A.mapWithIndex(
-              itemQuizz,
-              (index, item) => `
-              <li>
-                <h2>${item.question}</h2>
-                <ul>
-                  ${item.options
-                    .map(
-                      (option) => `
-                    <li>${option}</li>
-                  `,
-                    )
-                    .join("")}
-                </ul>
-                <button onclick="toggleAnswer(${index})" id="btn-${index}">Show Answer</button>
-                <p id="answer-${index}" style="display:none;">Correct Answer: ${item.correct}</p>
-              </li>
-            `,
-            ).join("")}
-          </ul>
-        </body>
-      </html>
-      `;
+    <html>
+      <head>
+        <title>Quizz ${theme}</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+          }
+          h1 {
+            color: #333;
+          }
+          h2 {
+            color: #555;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: #0056b3;
+          }
+          p {
+            margin: 10px 0 0;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Quizz ${theme}</h1>
+        <ul>
+          ${A.mapWithIndex(
+            itemQuizz,
+            (index, item) => `
+            <li>
+              <h2>${item.question}</h2>
+              <ul>
+                ${item.options
+                  .map(
+                    (option) => `
+                  <li>${option}</li>
+                `,
+                  )
+                  .join("")}
+              </ul>
+              <button onclick="toggleAnswer(${index})" id="btn-${index}">Show Answer</button>
+              <p id="answer-${index}" style="display:none;">Correct Answer: ${item.correct}</p>
+            </li>
+          `,
+          ).join("")}
+        </ul>
+      </body>
+    </html>
+    `;
 
       app.get(`/quizz/${theme}`, (req, res) => {
         console.log(`GET /quizz/${theme}`);
