@@ -109,32 +109,88 @@ const getAllLettersButCorrectLetter = (
   return A.filter(allLetters, (letter) => letter !== correctLetter);
 };
 
+const normalizeUrl = (str: string): string => {
+  return str
+    .normalize("NFD") // Normalize to decompose combined characters
+    .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+    .replace(/[^a-zA-Z0-9\-]/g, "-") // Replace non-alphanumeric characters with hyphens
+    .replace(/--+/g, "-") // Replace multiple hyphens with a single hyphen
+    .replace(/^-+|-+$/g, ""); // Remove leading and trailing hyphens
+};
+
+// Exemple d'utilisation
+const originalString = "Fonctions-d’Ordre-Superieur-et-Fonctions-Pures";
+const normalizedString = normalizeUrl(originalString);
+console.log(normalizedString); // "Fonctions-d-Ordre-Superieur-et-Fonctions-Pures"
+
+const fullRoutesAndQuizz = pipe(
+  D.toPairs(buildArrayQuizzOptimized()),
+  A.map(([theme, itemQuizz]) => {
+    return [normalizeUrl(theme), itemQuizz] as const;
+  }),
+  (items) => {
+    console.log("");
+    console.log("Routes API : ");
+    console.log("");
+    A.forEach(items, ([theme, itemQuizz]) => {
+      console.log("->" + "/quizz/" + theme);
+    });
+    return items;
+  },
+);
+
+const keysRoutes = A.map(fullRoutesAndQuizz, ([theme, _]) => theme);
+
 export const makeRouteServer = (app: express.Application) => {
   // Route de base pour tester le serveur
   app.get("/", (req, res) => {
-    res.send("Hello, world!");
+    const menuHtml = `
+    <html>
+      <head>
+        <title>API Menu</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+          }
+          h1 {
+            color: #333;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          a {
+            text-decoration: none;
+            color: #007bff;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>API Menu</h1>
+        <ul>
+          ${keysRoutes.map((route) => `<li><a href="/quizz/${route}">${route}</a></li>`).join("")}
+        </ul>
+      </body>
+    </html>
+    `;
+    res.send(menuHtml);
   });
 
-  pipe(
-    D.toPairs(buildArrayQuizzOptimized()),
-    A.map(([theme, itemQuizz]) => {
-      const trimmedTheme = trimAllWhiteSpace(theme);
-      const normalizedTheme = trimmedTheme
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
-      return [normalizedTheme, itemQuizz] as const;
-    }),
-    (items) => {
-      console.log("");
-      console.log("Routes API : ");
-      console.log("");
-      A.forEach(items, ([theme, itemQuizz]) => {
-        console.log("->" + "/quizz/" + theme);
-      });
-      return items;
-    },
-    A.forEach(([theme, itemQuizz]) => {
-      const questionsHtml = `
+  A.forEach(fullRoutesAndQuizz, ([theme, itemQuizz]) => {
+    const questionsHtml = `
     <html>
       <head>
         <title>Quizz ${theme}</title>
@@ -179,9 +235,35 @@ export const makeRouteServer = (app: express.Application) => {
             background-color: #e9ecef;
             border-radius: 5px;
           }
+          .back-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+          }
+          .back-button:hover {
+            background-color: #0056b3;
+          }
+          .back-home {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+          }
+          .back-home:hover {
+            background-color: #0056b3;
+          }
         </style>
       </head>
       <body>
+        <a href="/" class="back-home">Back Home</a>
         <h1>Quizz ${theme}</h1>
         <ul>
           ${A.mapWithIndex(
@@ -204,33 +286,27 @@ export const makeRouteServer = (app: express.Application) => {
           `,
           ).join("")}
         </ul>
+        <a href="/" class="back-button">Retour</a>
+        <script>
+            function toggleAnswer(index) {
+                const answer = document.getElementById('answer-' + index);
+                const button = document.getElementById('btn-' + index);
+                if (answer.style.display === 'none') {
+                    answer.style.display = 'block';
+                    button.textContent = 'Hide Answer';
+                } else {
+                    answer.style.display = 'none';
+                    button.textContent = 'Show Answer';
+                }
+            }
+        </script>
       </body>
     </html>
     `;
 
-      app.get(`/quizz/${theme}`, (req, res) => {
-        console.log(`GET /quizz/${theme}`);
-        res.send(`
-        <html>
-        <body>
-            ${questionsHtml}
-            <script>
-                function toggleAnswer(index) {
-                    const answer = document.getElementById('answer-' + index);
-                    const button = document.getElementById('btn-' + index);
-                    if (answer.style.display === 'none') {
-                        answer.style.display = 'block';
-                        button.textContent = 'Hide Answer';
-                    } else {
-                        answer.style.display = 'none';
-                        button.textContent = 'Show Answer';
-                    }
-                }
-            </script>
-        </body>
-        </html>
-        `);
-      });
-    }),
-  );
+    app.get(`/quizz/${theme}`, (req, res) => {
+      console.log(`GET /quizz/${theme}`);
+      res.send(questionsHtml);
+    });
+  });
 };
