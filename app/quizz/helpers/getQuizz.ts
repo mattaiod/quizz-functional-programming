@@ -7,7 +7,6 @@ export default async function getQuizz(
   const quizzResponse = (await fetch(
     `http://localhost:3001/quizz/${quizzId}`,
   ).then((res) => res.json())) as ItemQuizz[];
-  console.log(quizzResponse);
   const quizz = A.map(quizzResponse, (quizzResponse) => {
     return {
       theme: quizzResponse.theme,
