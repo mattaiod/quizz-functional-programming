@@ -45,7 +45,7 @@
       "theme": "Typage et Immutabilité",
       "question": "Quel est un exemple de type somme en TypeScript ?",
       "options": ["A) type Result = Success | Failure;", "B) type NumberOrString = number | string;", "C) type Direction = 'up' | 'down';", "D) type BooleanString = boolean | string;"],
-      "correct": ["A", "B", "C"]
+      "correct": ["A", "B", "D"]
   },
   {
       "theme": "Programmation Réactive",
