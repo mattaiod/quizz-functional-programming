@@ -5,7 +5,7 @@ import { makeRouteServer } from "./routes";
 const app = express();
 
 // Définition du port sur lequel le serveur va écouter
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware pour parser les requêtes au format JSON
 app.use(express.json());
