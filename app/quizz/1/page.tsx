@@ -1,3 +1,6 @@
+import getQuizz from '../helpers/getQuizz';
+
 export default function Page() {
-  return <>Quizz 1</>;
+  const quizzJSON = getQuizz(1);
+  return <>{quizzJSON}</>;
 }

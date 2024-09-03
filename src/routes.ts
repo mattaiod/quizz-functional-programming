@@ -2,6 +2,7 @@ import express from "express";
 import { A, B, D, F, G, pipe, S } from "@mobily/ts-belt";
 import fs from "fs";
 import path from "path";
+import { themeToLevelMapping } from "./themeToLevelMapping";
 
 type ItemQuizz = {
   theme: string;
@@ -124,66 +125,20 @@ export const makeRouteServer = (app: express.Application) => {
       console.log("");
       console.log("Routes API : ");
       console.log("");
-      A.forEach(items, ([theme, itemQuizz]) => {
-        console.log("->" + "/quizz/" + theme);
+      A.map(items, ([theme, itemQuizz]) => {
+        console.log(
+          "->" + "/quizz/" + themeToLevelMapping[theme] + " : " + theme,
+        );
       });
       return items;
     },
-    A.forEach(([theme, itemQuizz]) => {
-      const questionsHtml = `
-      <html>
-        <head>
-          <title>Quizz ${theme}</title>
-        </head>
-        <body>
-          <h1>Quizz ${theme}</h1>
-          <ul>
-            ${A.mapWithIndex(
-              itemQuizz,
-              (index, item) => `
-              <li>
-                <h2>${item.question}</h2>
-                <ul>
-                  ${item.options
-                    .map(
-                      (option) => `
-                    <li>${option}</li>
-                  `,
-                    )
-                    .join("")}
-                </ul>
-                <button onclick="toggleAnswer(${index})" id="btn-${index}">Show Answer</button>
-                <p id="answer-${index}" style="display:none;">Correct Answer: ${item.correct}</p>
-              </li>
-            `,
-            ).join("")}
-          </ul>
-        </body>
-      </html>
-      `;
+    A.map(([theme, itemQuizz]) => {
+      const questions = JSON.stringify(itemQuizz);
 
-      app.get(`/quizz/${theme}`, (req, res) => {
-        console.log(`GET /quizz/${theme}`);
-        res.send(`
-        <html>
-        <body>
-            ${questionsHtml}
-            <script>
-                function toggleAnswer(index) {
-                    const answer = document.getElementById('answer-' + index);
-                    const button = document.getElementById('btn-' + index);
-                    if (answer.style.display === 'none') {
-                        answer.style.display = 'block';
-                        button.textContent = 'Hide Answer';
-                    } else {
-                        answer.style.display = 'none';
-                        button.textContent = 'Show Answer';
-                    }
-                }
-            </script>
-        </body>
-        </html>
-        `);
+      app.get(`/quizz/${themeToLevelMapping[theme]}`, (req, res) => {
+        console.log(`GET /quizz/${themeToLevelMapping[theme]}`);
+        res.setHeader("Content-Type", "application/json");
+        res.json(questions);
       });
     }),
   );
