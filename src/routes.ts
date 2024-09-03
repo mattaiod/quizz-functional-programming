@@ -112,6 +112,12 @@ const getAllLettersButCorrectLetter = (
 
 export const makeRouteServer = (app: express.Application) => {
   // Route de base pour tester le serveur
+  app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+    next();
+  });
   app.get("/", (req, res) => {
     res.send("Hello, world!");
   });
@@ -133,12 +139,10 @@ export const makeRouteServer = (app: express.Application) => {
       return items;
     },
     A.map(([theme, itemQuizz]) => {
-      const questions = JSON.stringify(itemQuizz);
-
       app.get(`/quizz/${themeToLevelMapping[theme]}`, (req, res) => {
         console.log(`GET /quizz/${themeToLevelMapping[theme]}`);
         res.setHeader("Content-Type", "application/json");
-        res.json(questions);
+        res.json(itemQuizz);
       });
     }),
   );
