@@ -118,7 +118,11 @@ export const makeRouteServer = (app: express.Application) => {
   pipe(
     D.toPairs(buildArrayQuizzOptimized()),
     A.map(([theme, itemQuizz]) => {
-      return [trimAllWhiteSpace(theme), itemQuizz] as const;
+      const trimmedTheme = trimAllWhiteSpace(theme);
+      const normalizedTheme = trimmedTheme
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+      return [normalizedTheme, itemQuizz] as const;
     }),
     (items) => {
       console.log("");
