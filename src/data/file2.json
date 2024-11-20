@@ -13,12 +13,6 @@
   },
   {
       "theme": "Introduction à la Programmation Fonctionnelle",
-      "question": "Quelle est la différence entre une fonction d'ordre supérieur et une fonction de premier ordre ?",
-      "options": ["A) Une fonction d'ordre supérieur accepte d'autres fonctions comme arguments ou retourne une fonction", "B) Une fonction de premier ordre accepte d'autres fonctions comme arguments", "C) Une fonction de premier ordre ne peut pas accepter d'autres fonctions", "D) Une fonction d'ordre supérieur ne peut pas retourner une fonction"],
-      "correct": "A"
-  },
-  {
-      "theme": "Introduction à la Programmation Fonctionnelle",
       "question": "Pourquoi la programmation fonctionnelle est-elle moins sujette aux bugs que la programmation impérative ?",
       "options": ["A) Elle évite l'utilisation d'états mutables", "B) Elle est plus facile à apprendre", "C) Elle est basée sur des concepts mathématiques rigoureux", "D) Elle utilise des boucles for et while"],
       "correct": "A"
