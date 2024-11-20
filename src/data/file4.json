@@ -3,7 +3,7 @@
       "theme": "Concepts Fondamentaux",
       "question": "Pourquoi la programmation fonctionnelle préfère-t-elle l'utilisation de fonctions comme map ou reduce à la place de boucles for ?",
       "options": ["A) Parce qu'elles sont plus performantes", "B) Parce qu'elles favorisent l'immutabilité", "C) Parce qu'elles sont plus faciles à écrire", "D) Parce qu'elles rendent le code plus lisible"],
-      "correct": "B"
+      "correct": "B, C, D"
   },
   {
       "theme": "Concepts Fondamentaux",
